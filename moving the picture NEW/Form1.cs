@@ -16,5 +16,42 @@ namespace moving_the_picture_NEW
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            pictureBox2.Location = new Point(pictureBox2.Location.X + 5, pictureBox2.Location.Y);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Location = new Point(pictureBox2.Location.X + 10, pictureBox2.Location.Y);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Location = new Point(pictureBox2.Location.X - 10, pictureBox2.Location.Y);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Location = new Point(pictureBox2.Location.X , pictureBox2.Location.Y + 10);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y - 10);
+        }
     }
+    
+    
 }
