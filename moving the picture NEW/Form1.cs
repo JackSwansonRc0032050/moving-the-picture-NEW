@@ -51,6 +51,24 @@ namespace moving_the_picture_NEW
         {
             pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y - 10);
         }
+
+        private async void button5_Click(object sender, EventArgs e)
+        {
+            int d;
+            try
+            { d = Convert.ToInt32(textBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Only numbers fella");
+                d = 10;
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                pictureBox2.Location = new Point(pictureBox2.Location.X + 5, pictureBox2.Location.Y);
+                await Task.Delay(d);
+            }
+        }
     }
     
     
